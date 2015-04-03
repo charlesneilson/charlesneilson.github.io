@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="The webshite of a guy who like to make things.">
+  <meta name="description" content="The website of a guy who like to make things.">
   <meta name="author" content="Charles Neilson">
   <meta name="keywords" content="Multimedia, Illustrator, programming, Data, Fun">
 
@@ -18,27 +18,37 @@
 <body>
     <div class="container-fluid wrapper">
       <div class="row">       
-        <div class= "col-md-4 hidden-sm hidden-xs">
+
+        <!-- rightmost gif -->
+        <div class="col-md-4 hidden-sm hidden-xs">
             <img class="img-responsive" src="./assets/img/bee.gif">
         </div> 
-        <div id="content" class= "col-md-4">
+
+        <!-- central text div -->
+        <div id="content" class="col-md-4">
           <h2> Charles Neilson </h2>
           <h3> I make things </h3>
-          
-
           <i class="fa fa-linkedin-square"></i> 
           <i class="fa fa-envelope-o"></i> 
           <i class="fa fa-cart-plus"></i> 
           <i class="fa fa-file text"></i> 
         </div>
-        <div class="col-sm-4 col-sm-offset-4 col-md-4">
+
+
+        <!-- leftmost gif (only shown in md width or more -->
+        <div class="col-md-4 hidden-sm hidden-xs">
            <img class="img-responsive" src="./assets/img/Pwing.gif">
+        </div>
+
+        <!-- leftmost gif (only shown in xs, sm width -->
+        <div class="hidden-lg hidden-md 
+                    col-sm-4 col-sm-offset-4
+                    col-xs-4 col-xs-offset-4">
+            <img class="img-responsive" src="./assets/img/Pwing.gif">
         </div>
       </div>
    </div>
     <script src="./assets/js/jquery.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
-
-    <script></script>
 </body>
 </html>
