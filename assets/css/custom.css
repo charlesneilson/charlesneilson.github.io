@@ -3,7 +3,7 @@
 html, 
 body{
     color:black;
-    font-family: "Verdana", "Geneva", sans-serif;
+    font-family: 'Press Start 2P', cursive;
     font-size: 1.5em;
     background-color:white;
 }
@@ -12,6 +12,7 @@ body{
     text-align: center;
     margin-top: 6%;
 }
+
 
 .wrapper{
     margin-top: 10%;
