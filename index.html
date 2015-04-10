@@ -33,7 +33,22 @@
         <img class="img-responsive" src="./assets/img/Circle.gif">-->
       
           <h2> Charles Neilson </h2>
-          <h3> I like to <span id="js-rotating"> Draw Characters, Compose sounds, Create data-art, Design webpages, Construct films</span></h3>
+
+          <h3 class="hidden-sm hidden-xs"> 
+            I like to 
+            <span id="desktop-span" class="js-rotating"> 
+              Draw Characters, Compose sounds, Create data-art, Design webpages, Construct films
+            </span>
+          </h3>
+
+          <h3 class="hidden-md hidden-lg"> 
+            I like to 
+          </h3>
+          <h3 class="hidden-md hidden-lg">
+            <span id="mobile-span" class="js-rotating"> 
+              Draw Characters, Compose sounds, Create data-art, Design webpages, Construct films
+            </span>
+          </h3>
           
 
 
@@ -61,13 +76,21 @@
    </div>
     <script src="./assets/js/jquery.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/imagesloaded.min.js"></script>
     <script src="./assets/js/morphext.min.js"></script>
     <script type="text/javascript">
+        imagesLoaded( ".wrapper", function(){
+            $( ".wrapper").fadeIn(2000);  
+        })
+
+      
+     
+
       // http://stackoverflow.com/questions/4211909/disable-dragging-an-image-from-an-html-page
       $('img').on('dragstart', function(event) { event.preventDefault(); });
 
 
-      $("#js-rotating").Morphext({
+      $(".js-rotating").Morphext({
             animation: "bounceinRight", // Animation type (refer to Animate.css for a list of available animations) ANIMATED TAG LINE
             separator: ",", // An array of words to rotate are created based on this separator. Change it if you wish to separate the words differently (e.g. So Simple | Very Doge | Much Wow | Such Cool)
             speed: 2000 // The delay between each word in milliseconds
