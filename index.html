@@ -79,12 +79,10 @@
     <script src="./assets/js/imagesloaded.min.js"></script>
     <script src="./assets/js/morphext.min.js"></script>
     <script type="text/javascript">
+        //when inmage is loaded inside wrapper fade in, lasting 2 secs
         imagesLoaded( ".wrapper", function(){
             $( ".wrapper").fadeIn(2000);  
         })
-
-      
-     
 
       // http://stackoverflow.com/questions/4211909/disable-dragging-an-image-from-an-html-page
       $('img').on('dragstart', function(event) { event.preventDefault(); });
