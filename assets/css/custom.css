@@ -39,7 +39,7 @@ body{
 #content .desktop-span { /*keeping the width of the new words box*/
 	position:relative;
     width:200px;
-    right:15px;
+    right:10px;
 }
 #content .mobile-span { /*keeping the width of the new words box*/
 }
