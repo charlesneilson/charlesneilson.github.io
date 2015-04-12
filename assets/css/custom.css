@@ -1,4 +1,4 @@
-/*{ border:1px black solid; } /*Brings up the grids*/  
+*{ border:1px black solid; } /*Brings up the grids*/  
 
 html, 
 body{
@@ -36,14 +36,15 @@ body{
 	font-size: 0.6em;
 }
 
+
 #content .desktop-span { /*keeping the width of the new words box*/
 	position:relative;
-    width:200px;
-    right:10px;
-}
-#content .mobile-span { /*keeping the width of the new words box*/
+    width: 300px;
+    right: 10px;
 }
 
+#content .mobile-span { /*keeping the width of the new words box*/
+}
 
 .wrapper{
     margin-top: 10%;
